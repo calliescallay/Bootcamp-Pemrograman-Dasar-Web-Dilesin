@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        tag table berfungsi untuk membuat table di html
+        tr berfungsi untuk membuat isian table secara horizontal
+        th berfungsi membuat judul table
+        td berfungsi untuk isian table
+     -->
+    <table>
+        <tr>
+            <th>
+                No
+            </th>
+            <th>
+                Nama
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Icha</td>
+        </tr>
+    </table>
+
+
+    <!-- 
+        border berfungsi memberikan garis penanda di table
+     -->
+
+    <table border="1">
+        <tr>
+            <th>
+                No
+            </th>
+            <th>
+                Nama
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Icha</td>
+        </tr>
+    </table>
+
+    <!-- 
+
+     -->
+
+    <table border="1">
+        <tr>
+            <th colspan="2">
+                No Antrian
+            </th>
+            <th>
+                Nama
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Icha</td>
+            <td>Yey</td>
+        </tr>
+    </table>
+
+    <!-- 
+
+     -->
+
+    <table border="1" width="100%">
+        <tr>
+            <td align="left">Kiri</td>
+            <td align="center">Tengah</td>
+            <td align="right">Kanan</td>
+        </tr>
+        <tr>
+            <td align="left">Data Rata Kiri</td>
+            <td align="center">Data Rata Tengah</td>
+            <td align="right">Data Rata Kanan</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+
+    <!-- 
+        form berfungsi untuk membuat form di html
+        action berfungsi untuk menentukan tujuan form
+        method berfungsi untuk menentukan metode pengiriman data
+
+     -->
+     <form action="" method="get">
+
+        <!-- 
+            label berfungsi untuk membuat label di form
+            input berfungsi untuk membuat inputan di form
+            type berfugsi untuk menentukan type inputan
+            name berfungsi untuk menentukan nama inputan
+         -->
+
+        <label for="">Nama</label>
+        <input type="text" name="nama" placeholder="Nama">
+
+        <br>
+
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+
+
+        <!-- checkbox menampilkan inputan berjenis checkbox -->
+        <br>
+        <input type="checkbox" name="show" onclick="showpassword()">
+        <label for="password">Lihat Password</label>
+
+        <br>
+
+        <textarea name="pesan" cols="30" rows="10" placeholder="Pesan Kamu"></textarea>
+
+        
+        <br>
+        <label for="">Jenis Kelamin</label>
+        <select name="" id="">
+            <option value="">Laki-laki</option>
+            <option value="">Perempuan</option>
+        </select>
+
+        <br>
+
+        <label for="">Jenis Kelamin</label>
+
+        <input type="radio" name="Laki-laki" id="">
+        <label for="">Laki-laki</label>
+
+        <input type="radio" name="Perempuan" id="">
+        <label for="">Perempuan</label>
+        <br>
+        <!-- 
+            button type submit berfungsi untuk melakukan proses form
+            button type reset berfungsi untuk mereset form
+         -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+     </form>
+
+
+     <!-- berfungsi untuk membuat element berada di tengah -->
+     <center>
+        <img src="shani nasional.jpeg" alt="logo" width="100">
+        <h1>Shaney</h1>
+     </center>
+
+
+     <script>
+        function showpassword() {
+            var password = document.getElementById("password");
+            if (password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+     </script>
+
+
+
+</body>
+</html>
